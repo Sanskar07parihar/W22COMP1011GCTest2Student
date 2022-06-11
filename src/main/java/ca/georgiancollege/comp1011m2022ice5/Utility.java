@@ -67,7 +67,7 @@ public class Utility
      * @param increment_value
      */
     //This is a helper method(function) which helps us to get the spinners work rather than repeating the lambda expression over and over again
-    public void configureVector2DSpinner(Spinner<Double> spinner, double min, double max, double default_value, double increment_value)
+    public void configureVector2DSpinner(Spinner<Double> spinner, double min , double max, double default_value, double increment_value)
     {
         // configure each spinner
         // Step 1. Define a SpinnerValueFactory

@@ -56,8 +56,8 @@
                   <Spinner fx:id="X2Spinner" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                   <Spinner fx:id="Y2Spinner" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
                   <Label text="Magnitude" GridPane.columnIndex="6" />
-                  <Label fx:id="startingMagnitude" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                  <Label fx:id="endingMagnitude" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <Label fx:id="startingMagnitudeLabel" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Label fx:id="endingMagnitudeLabel" GridPane.columnIndex="6" GridPane.rowIndex="3" />
                </children>
             </GridPane>
          </children>
