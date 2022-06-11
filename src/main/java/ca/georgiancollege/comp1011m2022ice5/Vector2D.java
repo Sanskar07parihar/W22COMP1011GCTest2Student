@@ -90,7 +90,7 @@ public class Vector2D
         m_x = new_x;
     }
 
-    // Computed read-only Property
+    // Computed read-only Property (we don't need to store a data member in a computed property)
     public float getMagnitude()
     {
         return Utility.Instance().distance(new Vector2D(0.0f,0.0f), this);
