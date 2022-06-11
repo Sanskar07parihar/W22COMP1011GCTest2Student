@@ -144,9 +144,17 @@ public class DBManager
     {
         // Step 1. Create a Series
         XYChart.Series<String, Float> magnitudes = new XYChart.Series<>();
-
+        magnitudes.setName("2022");
         // Step 2. Get the Data from the Database
         ArrayList<Vector2D> vectors = readVectorTable();
+
+        // Mock Data example
+        /*
+        magnitudes.getData().add(new XYChart.Data<>("0, 0",0.0f));
+        magnitudes.getData().add(new XYChart.Data<>("10, 20",10.0f));
+        magnitudes.getData().add(new XYChart.Data<>("30, 40",20.0f));
+        magnitudes.getData().add(new XYChart.Data<>("50, 60",30.0f));
+        */
 
         // Step 3. For each Vector in the Data...Loop and add it to the Series
         for (var vector : vectors)
@@ -154,6 +162,7 @@ public class DBManager
             var chartData = new XYChart.Data<>(vector.toString(), vector.getMagnitude());
             magnitudes.getData().add(chartData);
         }
+
         // We are returning magnitudes because it is of the type that we need to return
         return magnitudes;
     }

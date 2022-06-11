@@ -34,6 +34,9 @@ public class Vector2DChartViewController implements Initializable
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
          barChart.getData().addAll(DBManager.Instance().getMagnitude());
+         numberAxis.setLabel("Magnitude");
+         categoryAxis.setLabel("Vector2D");
+         barChart.setLegendVisible(false);
     }
 }
 
