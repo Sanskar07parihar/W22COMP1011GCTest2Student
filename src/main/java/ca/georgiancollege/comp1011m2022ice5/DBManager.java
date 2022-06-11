@@ -51,6 +51,7 @@ public class DBManager
         ResultSet resultSet = null;
 
         //create a query string
+        // ? is a placeholder for what we are going to insert
         String sql = "INSERT INTO vectors(X, Y, Magnitude) VALUES(?, ?, ?);";
 
         try
