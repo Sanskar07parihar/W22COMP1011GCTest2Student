@@ -19,8 +19,6 @@ import java.util.ResourceBundle;
 
 public class CalculateVector2DDistanceController implements Initializable
 {
-
-
     @FXML
     private TextField ResultTextField;
 
