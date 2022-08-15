@@ -1,0 +1,34 @@
+ 000100  //KC03ACA JOB 1,'BHVYA WALIA',NOTIFY=&SYSUID               
+ 000200  //STEP1    EXEC PGM=IEBGENER                               
+ 000300  //SYSPRINT DD   SYSOUT=*                                   
+ 000400  //SYSIN    DD   DUMMY                                      
+ 000500  //SYSUT1   DD   DSNAME=KC03ACA.JCL(BHVYA),DISP=SHR         
+ 000600  //SYSUT2   DD   SYSOUT=*                                   
+ ''''''                     
+
+
+KC03ACA.JCL(IEBGENER)  
+'KC03ACA.IEBGENER.LIST'            ss         
+
+https://www.weatherapi.com/?apikey=?3eb44197469a4b55869194631222707 
+
+https://rapidapi.com/transloc/api/openapi-1-2/
+
+c1999bf7dcmsh26753e6deccd19bp16ad32jsn23d1907abe58   
+
+
+
+https://transloc-api-1-2.p.rapidapi.com/?apikey=c1999bf7dcmsh26753e6deccd19bp16ad32jsn23d1907abe58
+
+
+
+
+
+https://transloc-api-1-2.p.rapidapi.com/?apikey=/agencies.json?callback=call&geo_area=35.80176%2C-78.64347%7C35.78061%2C-78.68218&agencies=12"      
+
+
+
+
+http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid={YOUR_API_KEY}&lang=eng&units=metric  
+
+https://transloc-api-1-2.p.rapidapi.com/agencies.json/?apikey=c1999bf7dcmsh26753e6deccd19bp16ad32jsn23d1907abe58

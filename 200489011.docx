@@ -1,0 +1,255 @@
+﻿Write a SQL query to find the first name,
+last name, department number, and department
+name for each employee.
+first_name           last_name                 department_id department_name
+-------------------- ------------------------- ------------- ------------------------------
+Steven               King                      9             Executive
+Neena                Kochhar                   9             Executive
+Lex                  De Haan                   9             Executive
+Alexander            Hunold                    6             IT
+Bruce                Ernst                     6             IT
+David                Austin                    6             IT
+Valli                Pataballa                 6             IT
+Diana                Lorentz                   6             IT
+Nancy                Greenberg                 10            Finance
+Daniel               Faviet                    10            Finance
+John                 Chen                      10            Finance
+Ismael               Sciarra                   10            Finance
+Jose Manuel          Urman                     10            Finance
+Luis                 Popp                      10            Finance
+Den                  Raphaely                  3             Purchasing
+Alexander            Khoo                      3             Purchasing
+Shelli               Baida                     3             Purchasing
+Sigal                Tobias                    3             Purchasing
+Guy                  Himuro                    3             Purchasing
+Karen                Colmenares                3             Purchasing
+Matthew              Weiss                     5             Shipping
+Adam                 Fripp                     5             Shipping
+Payam                Kaufling                  5             Shipping
+Shanta               Vollman                   5             Shipping
+Irene                Mikkilineni               5             Shipping
+John                 Russell                   8             Sales
+Karen                Partners                  8             Sales
+Jonathon             Taylor                    8             Sales
+Jack                 Livingston                8             Sales
+Kimberely            Grant                     8             Sales
+Charles              Johnson                   8             Sales
+Sarah                Bell                      5             Shipping
+Britney              Everett                   5             Shipping
+Jennifer             Whalen                    1             Administration
+Michael              Hartstein                 2             Marketing
+Pat                  Fay                       2             Marketing
+Susan                Mavris                    4             Human Resources
+Hermann              Baer                      7             Public Relations
+Shelley              Higgins                   11            Accounting
+William              Gietz                     11            Accounting
+
+(40 rows affected)
+
+Write a SQL query to find the first name,
+last name, department, city, and state
+province for each employee.
+first_name           last_name                 department_name                city                           state_province
+-------------------- ------------------------- ------------------------------ ------------------------------ -------------------------
+Steven               King                      Executive                      Seattle                        Washington
+Neena                Kochhar                   Executive                      Seattle                        Washington
+Lex                  De Haan                   Executive                      Seattle                        Washington
+Alexander            Hunold                    IT                             Southlake                      Texas
+Bruce                Ernst                     IT                             Southlake                      Texas
+David                Austin                    IT                             Southlake                      Texas
+Valli                Pataballa                 IT                             Southlake                      Texas
+Diana                Lorentz                   IT                             Southlake                      Texas
+Nancy                Greenberg                 Finance                        Seattle                        Washington
+Daniel               Faviet                    Finance                        Seattle                        Washington
+John                 Chen                      Finance                        Seattle                        Washington
+Ismael               Sciarra                   Finance                        Seattle                        Washington
+Jose Manuel          Urman                     Finance                        Seattle                        Washington
+Luis                 Popp                      Finance                        Seattle                        Washington
+Den                  Raphaely                  Purchasing                     Seattle                        Washington
+Alexander            Khoo                      Purchasing                     Seattle                        Washington
+Shelli               Baida                     Purchasing                     Seattle                        Washington
+Sigal                Tobias                    Purchasing                     Seattle                        Washington
+Guy                  Himuro                    Purchasing                     Seattle                        Washington
+Karen                Colmenares                Purchasing                     Seattle                        Washington
+Matthew              Weiss                     Shipping                       South San Francisco            California
+Adam                 Fripp                     Shipping                       South San Francisco            California
+Payam                Kaufling                  Shipping                       South San Francisco            California
+Shanta               Vollman                   Shipping                       South San Francisco            California
+Irene                Mikkilineni               Shipping                       South San Francisco            California
+John                 Russell                   Sales                          Oxford                         Oxford
+Karen                Partners                  Sales                          Oxford                         Oxford
+Jonathon             Taylor                    Sales                          Oxford                         Oxford
+Jack                 Livingston                Sales                          Oxford                         Oxford
+Kimberely            Grant                     Sales                          Oxford                         Oxford
+Charles              Johnson                   Sales                          Oxford                         Oxford
+Sarah                Bell                      Shipping                       South San Francisco            California
+Britney              Everett                   Shipping                       South San Francisco            California
+Jennifer             Whalen                    Administration                 Seattle                        Washington
+Michael              Hartstein                 Marketing                      Toronto                        Ontario
+Pat                  Fay                       Marketing                      Toronto                        Ontario
+Susan                Mavris                    Human Resources                London                         NULL
+Hermann              Baer                      Public Relations               Munich                         Bavaria
+Shelley              Higgins                   Accounting                     Seattle                        Washington
+William              Gietz                     Accounting                     Seattle                        Washington
+
+(40 rows affected)
+
+Write a SQL query to find all those
+employees who work in department ID 8 or 4.
+Return first name, last name, department
+number and department name.
+FIRST_NAME           LAST_NAME                 DEPARTMENT_ID DEPARTMENT_NAME
+-------------------- ------------------------- ------------- ------------------------------
+Kimberely            Grant                     8             Sales
+Charles              Johnson                   8             Sales
+Jack                 Livingston                8             Sales
+Susan                Mavris                    4             Human Resources
+Karen                Partners                  8             Sales
+John                 Russell                   8             Sales
+Jonathon             Taylor                    8             Sales
+
+(7 rows affected)
+
+Write a SQL query to find those employees
+who earn less than the employee of ID 112.
+Return first name, last name, and salary.
+FIRST_NAME           LAST_NAME                 SALARY
+-------------------- ------------------------- ---------------------------------------
+Bruce                Ernst                     6000.00
+David                Austin                    4800.00
+Valli                Pataballa                 4800.00
+Diana                Lorentz                   4200.00
+Ismael               Sciarra                   7700.00
+Luis                 Popp                      6900.00
+Alexander            Khoo                      3100.00
+Shelli               Baida                     2900.00
+Sigal                Tobias                    2800.00
+Guy                  Himuro                    2600.00
+Karen                Colmenares                2500.00
+Shanta               Vollman                   6500.00
+Irene                Mikkilineni               2700.00
+Kimberely            Grant                     7000.00
+Charles              Johnson                   6200.00
+Sarah                Bell                      4000.00
+Britney              Everett                   3900.00
+Jennifer             Whalen                    4400.00
+Pat                  Fay                       6000.00
+Susan                Mavris                    6500.00
+
+(20 rows affected)
+
+Write a SQL query to find those employees
+who have or not any department. Return first
+name, last name, department ID, department
+name.
+FIRST_NAME           LAST_NAME                 DEPARTMENT_ID DEPARTMENT_NAME
+-------------------- ------------------------- ------------- ------------------------------
+Steven               King                      9             Executive
+Neena                Kochhar                   9             Executive
+Lex                  De Haan                   9             Executive
+Alexander            Hunold                    6             IT
+Bruce                Ernst                     6             IT
+David                Austin                    6             IT
+Valli                Pataballa                 6             IT
+Diana                Lorentz                   6             IT
+Nancy                Greenberg                 10            Finance
+Daniel               Faviet                    10            Finance
+John                 Chen                      10            Finance
+Ismael               Sciarra                   10            Finance
+Jose Manuel          Urman                     10            Finance
+Luis                 Popp                      10            Finance
+Den                  Raphaely                  3             Purchasing
+Alexander            Khoo                      3             Purchasing
+Shelli               Baida                     3             Purchasing
+Sigal                Tobias                    3             Purchasing
+Guy                  Himuro                    3             Purchasing
+Karen                Colmenares                3             Purchasing
+Matthew              Weiss                     5             Shipping
+Adam                 Fripp                     5             Shipping
+Payam                Kaufling                  5             Shipping
+Shanta               Vollman                   5             Shipping
+Irene                Mikkilineni               5             Shipping
+John                 Russell                   8             Sales
+Karen                Partners                  8             Sales
+Jonathon             Taylor                    8             Sales
+Jack                 Livingston                8             Sales
+Kimberely            Grant                     8             Sales
+Charles              Johnson                   8             Sales
+Sarah                Bell                      5             Shipping
+Britney              Everett                   5             Shipping
+Jennifer             Whalen                    1             Administration
+Michael              Hartstein                 2             Marketing
+Pat                  Fay                       2             Marketing
+Susan                Mavris                    4             Human Resources
+Hermann              Baer                      7             Public Relations
+Shelley              Higgins                   11            Accounting
+William              Gietz                     11            Accounting
+
+(40 rows affected)
+
+Write a SQL query to find those employees
+who get higher salary than the employee
+whose ID is 112. Return first name, last
+name.
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Steven               King
+Neena                Kochhar
+Lex                  De Haan
+Alexander            Hunold
+Nancy                Greenberg
+Daniel               Faviet
+John                 Chen
+Den                  Raphaely
+Matthew              Weiss
+Adam                 Fripp
+Payam                Kaufling
+John                 Russell
+Karen                Partners
+Jonathon             Taylor
+Jack                 Livingston
+Michael              Hartstein
+Hermann              Baer
+Shelley              Higgins
+William              Gietz
+
+(19 rows affected)
+
+Write a SQL query to find those employees
+whose salary matches the smallest salary of
+any of the departments. Return first name,
+last name, and department ID.
+FIRST_NAME           LAST_NAME                 SALARY                                  DEPARTMENT_ID
+-------------------- ------------------------- --------------------------------------- -------------
+Neena                Kochhar                   17000.00                                9
+Lex                  De Haan                   17000.00                                9
+Bruce                Ernst                     6000.00                                 6
+Diana                Lorentz                   4200.00                                 6
+Luis                 Popp                      6900.00                                 10
+Karen                Colmenares                2500.00                                 3
+Shanta               Vollman                   6500.00                                 5
+Irene                Mikkilineni               2700.00                                 5
+Charles              Johnson                   6200.00                                 8
+Jennifer             Whalen                    4400.00                                 1
+Pat                  Fay                       6000.00                                 2
+Susan                Mavris                    6500.00                                 4
+Hermann              Baer                      10000.00                                7
+William              Gietz                     8300.00                                 11
+
+(14 rows affected)
+
+Write a SQL query to find those employees
+who have a manager and do not work in those
+departments where manager ids are in the
+range 100, 200 (Begin and end values are
+included.) Return all the fields of the
+employees.
+employee_id first_name           last_name                 email                                                                                                phone_number         hire_date  job_id      salary                                  manager_id  department_id
+----------- -------------------- ------------------------- ---------------------------------------------------------------------------------------------------- -------------------- ---------- ----------- --------------------------------------- ----------- -------------
+202         Pat                  Fay                       pat.fay@sqltutorial.org                                                                              603.123.6666         1997-08-17 11          6000.00                                 201         2
+206         William              Gietz                     william.gietz@sqltutorial.org                                                                        515.123.8181         1994-06-07 1           8300.00                                 205         11
+
+(2 rows affected)
+
+
+Completion time: 2022-06-16T22:45:11.9048519-04:00
